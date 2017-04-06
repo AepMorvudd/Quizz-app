@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Quizz Project Final</string>
+
+    <!-- HEADING -->
+    <string name="heading">Welcome to The Witcher\'s knowledge quiz!</string>
+    <string name="heading_questions">Here are your questions!</string>
+
+    <!--Quizz description-->
+    <string name="description">The Witcher by Polish writer Andrzej Sapkowski, is a fantasy series of short stories and novels about the witcher Geralt of Rivia. \nIn Sapkowski\'s books, \"witchers\" are monster hunters who (with training and body modification) develop supernatural abilities at a young age to battle deadly monsters.</string>
+    <string name="quiz_introduction">In this QUIZZ-APP we will check your knowledge of Andrzej Sapkowski\'s book series about the witcher.\n\n\n So let\'s get started!</string>
+
+    <!-- QUESTIONS -->
+    <string name="question_one">1. What was the main character\'s full name?</string>
+    <string name="question_two">2. Please check the books titles that are a part of The Witcher series written by Andrzej Sapkowski (please mark maximum 3 answers)</string>
+    <string name="question_three">3. Geralt\'s infamous nick name is</string>
+    <string name="question_four">4. What was Geralt\'s beloved one name?</string>
+
+    <!-- ANSWERS -->
+    <string name="question_one_hint">Witcher\'s name is...</string>
+    <string name="question_one_answer">Geralt of Rivia</string>
+
+    <string name="question_two_1">Blood of Elves</string>
+    <string name="question_two_2">Baptism of Fire</string>
+    <string name="question_two_3">The Tower of Swallows</string>
+    <string name="question_two_4">Wolf Tower</string>
+    <string name="question_two_5">House Corrino</string>
+    <string name="question_two_6">Intwerview with the Vampire</string>
+    <string name="question_two_7">The Blue Sword</string>
+    <string name="question_two_8">The Witcher</string>
+    <string name="question_two_9">The Witcher: Wild Hunt</string>
+    <string name="question_two_10">The Witcher: Assassin of Kings</string>
+
+    <string name="question_three_1">Butcher of Blaviken</string>
+    <string name="question_three_2">Monster Slayer</string>
+    <string name="question_three_3">Sword of Destiny</string>
+
+    <string name="question_four_1">Triss Merigold</string>
+    <string name="question_four_2">Yennefer of Vengerberg</string>
+    <string name="question_four_3">Fiona Elen Riannon</string>
+    <string name="question_four_4">Fringilla Vigo</string>
+
+    <!--Button-->
+    <string name="button">Submit your answers!</string>
+    <string name="reset_button">Reset</string>
+    <string name="begin">Begin!</string>
+
+    <!-- String values used in MainActivity.java file-->
+    <string name="congratulations">Congratulations on finishing the QUIZZ</string>
+    <string name="final_score">Your final score is: </string>
+    <string name="max_score">/6</string>
+
+    <!--Empty answer messages-->
+    <string name="empty_answer_1">Question one can not be left blank</string>
+    <string name="empty_answer_2">Question two can not be left blank</string>
+    <string name="empty_answer_3">Question three can not be left blank</string>
+    <string name="empty_answer_4">Question four can not be left blank</string>
+
+    <!--Too many marked answers in question 2 message-->
+    <string name="question_2_error">You have marked more than 3 answers in question two</string>
+</resources>

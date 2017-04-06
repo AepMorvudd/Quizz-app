@@ -1,0 +1,133 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MainStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/mainBackgroundColor</item>
+    </style>
+
+    <style name="ScrollsStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="InsideScrollsLayoutStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MainPicStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_margin">@dimen/margin_16</item>
+    </style>
+
+    <style name="HeadingTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">@dimen/margin_16</item>
+        <item name="android:paddingRight">@dimen/margin_16</item>
+        <item name="android:paddingBottom">@dimen/margin_8</item>
+        <item name="android:textSize">@dimen/heading_text_size</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/itemBackgroundColor</item>
+    </style>
+
+    <style name="DescriptionTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/margin_16</item>
+        <item name="android:layout_marginRight">@dimen/margin_16</item>
+        <item name="android:layout_marginBottom">@dimen/margin_16</item>
+        <item name="android:textSize">@dimen/body_text_size</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="EachQuestionLayoutStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/margin_16</item>
+        <item name="android:layout_marginRight">@dimen/margin_16</item>
+        <item name="android:layout_marginBottom">@dimen/margin_16</item>
+        <item name="android:background">@color/questionBackgroundColor</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="QuestionStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_margin">@dimen/margin_16</item>
+        <item name="android:textSize">@dimen/question_text_size</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <style name="InputTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:inputType">text</item>
+        <item name="android:layout_marginLeft">@dimen/margin_16</item>
+        <item name="android:layout_marginRight">@dimen/margin_16</item>
+        <item name="android:layout_marginBottom">@dimen/margin_16</item>
+        <item name="android:textSize">@dimen/body_text_size</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="CheckboxStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/answer_text_size</item>
+        <item name="android:paddingLeft">@dimen/checkbox_padding</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:layout_marginLeft">@dimen/margin_16</item>
+        <item name="android:layout_marginBottom">@dimen/margin_16</item>
+    </style>
+
+    <style name="LineStyle">
+        <item name="android:layout_height">@dimen/line_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginRight">@dimen/margin_8</item>
+        <item name="android:layout_marginLeft">@dimen/margin_8</item>
+        <item name="android:layout_marginTop">@dimen/margin_16</item>
+        <item name="android:layout_marginBottom">@dimen/margin_16</item>
+        <item name="android:background">@color/lineColor</item>
+    </style>
+
+    <style name="SubmitButton">
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="RadioGroupStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="RadioButtonStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/answer_text_size</item>
+        <item name="android:paddingLeft">@dimen/radio_padding</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:layout_marginLeft">@dimen/margin_16</item>
+        <item name="android:layout_marginBottom">@dimen/margin_16</item>
+    </style>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    style="@style/MainStyle"
+    tools:context="com.example.android.quizprojectfinal.MainActivity">
+
+    <!-- Heading (STAYS BOUND TO TOP OF THE SCREEN)-->
+    <TextView
+        style="@style/HeadingTextStyle"
+        android:text="@string/heading" />
+
+    <ScrollView
+        android:id="@+id/scroll_view_id"
+        style="@style/ScrollsStyle">
+
+        <LinearLayout style="@style/InsideScrollsLayoutStyle">
+
+            <ImageView
+                style="@style/MainPicStyle"
+                android:src="@drawable/mainpic" />
+
+            <!-- Description -->
+            <TextView
+                style="@style/DescriptionTextStyle"
+                android:text="@string/description" />
+
+            <TextView
+                style="@style/DescriptionTextStyle"
+                android:text="@string/quiz_introduction" />
+
+            <!--Reset Button-->
+            <Button
+                style="@style/SubmitButton"
+                android:onClick="startQuiz"
+                android:text="@string/begin" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

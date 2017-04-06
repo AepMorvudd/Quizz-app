@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#78909c</color>
+    <color name="colorAccent">#b0bec5</color>
+    <color name="itemBackgroundColor">#78909c</color>
+    <color name="mainBackgroundColor">#263238</color>
+    <color name="textColor">#eeeeee</color>
+    <color name="questionBackgroundColor">#455a64</color>
+    <color name="lineColor">#eceff1</color>
+</resources>
