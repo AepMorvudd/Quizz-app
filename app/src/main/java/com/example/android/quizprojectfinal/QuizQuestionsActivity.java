@@ -15,7 +15,8 @@ import android.widget.Toast;
 
 public class QuizQuestionsActivity extends AppCompatActivity {
 
-    // Boolean type of values that refer to checkboxes states
+    // User Answers
+    boolean answerOne;
     boolean answerTwoOne;
     boolean answerTwoTwo;
     boolean answerTwoThree;
@@ -25,24 +26,20 @@ public class QuizQuestionsActivity extends AppCompatActivity {
     // Score counter variables
     String toast;
     int score;
-    static final String playerScore = "Players Score";
+
+    // saving instances
+    static final String playerAnswerOne = "Players Answer 1";
+    static final String playerAnswerTwoOne = "Players Score 1";
+    static final String playerAnswerTwoTwo = "Players Score 2";
+    static final String playerAnswerTwoThree = "Players Score 3";
+    static final String playerAnswerThree = "Players Score 4";
+    static final String playerAnswerFour = "Players Score 5";
 
     // Enter variables
     EditText nameInput;
-    CheckBox answer2_1;
-    CheckBox answer2_2;
-    CheckBox answer2_3;
-    CheckBox answer2_4;
-    CheckBox answer2_5;
-    CheckBox answer2_6;
-    CheckBox answer2_7;
-    CheckBox answer2_8;
-    CheckBox answer2_9;
-    CheckBox answer2_10;
-    RadioButton answer3;
-    RadioButton answer4;
-    RadioGroup answer3group;
-    RadioGroup answer4group;
+    CheckBox answer2_1, answer2_2, answer2_3, answer2_4, answer2_5, answer2_6, answer2_7, answer2_8, answer2_9, answer2_10;
+    RadioButton answer3, answer4;
+    RadioGroup answer3group, answer4group;
     ScrollView scroll;
 
     @Override
@@ -51,7 +48,12 @@ public class QuizQuestionsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quiz_questions);
 
         if (savedInstanceState != null) {
-            score = savedInstanceState.getInt(playerScore);
+            answerTwoOne = savedInstanceState.getBoolean(playerAnswerTwoOne);
+            answerTwoTwo = savedInstanceState.getBoolean(playerAnswerTwoTwo);
+            answerTwoThree = savedInstanceState.getBoolean(playerAnswerTwoThree);
+            answerThree = savedInstanceState.getBoolean(playerAnswerThree);
+            answerFour = savedInstanceState.getBoolean(playerAnswerFour);
+            answerOne = savedInstanceState.getBoolean(playerAnswerOne);
         }
 
         nameInput = (EditText) findViewById(R.id.witchers_name);
@@ -77,7 +79,12 @@ public class QuizQuestionsActivity extends AppCompatActivity {
     */
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
-        savedInstanceState.putInt(playerScore, score);
+        savedInstanceState.putBoolean(playerAnswerTwoOne, answerTwoOne);
+        savedInstanceState.putBoolean(playerAnswerTwoTwo, answerTwoTwo);
+        savedInstanceState.putBoolean(playerAnswerTwoThree, answerTwoThree);
+        savedInstanceState.putBoolean(playerAnswerThree, answerThree);
+        savedInstanceState.putBoolean(playerAnswerFour, answerFour);
+        savedInstanceState.putBoolean(playerAnswerOne, answerOne);
 
         super.onSaveInstanceState(savedInstanceState);
     }
@@ -94,6 +101,7 @@ public class QuizQuestionsActivity extends AppCompatActivity {
     Retrieves second answer entered values
      */
     public void isClicked(View view) {
+        answerOne = witchersName().equalsIgnoreCase(getString(R.string.question_one_answer));
         answerTwoOne = answer2_1.isChecked();
         answerTwoTwo = answer2_2.isChecked();
         answerTwoThree = answer2_3.isChecked();
@@ -107,7 +115,7 @@ public class QuizQuestionsActivity extends AppCompatActivity {
     public int scoreCounter() {
         score = 0;
         // Checks the first answer if entered correctly and adds points if true
-        if (witchersName().equalsIgnoreCase(getString(R.string.question_one_answer))) {
+        if (answerOne) {
             score = score + 1;
         }
 
