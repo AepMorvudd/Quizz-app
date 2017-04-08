@@ -16,12 +16,7 @@ import android.widget.Toast;
 public class QuizQuestionsActivity extends AppCompatActivity {
 
     // User Answers
-    boolean answerOne;
-    boolean answerTwoOne;
-    boolean answerTwoTwo;
-    boolean answerTwoThree;
-    boolean answerThree;
-    boolean answerFour;
+    boolean answerOne, answerTwoOne, answerTwoTwo, answerTwoThree, answerThree, answerFour;
 
     // Score counter variables
     String toast;
@@ -101,7 +96,6 @@ public class QuizQuestionsActivity extends AppCompatActivity {
     Retrieves second answer entered values
      */
     public void isClicked(View view) {
-        answerOne = witchersName().equalsIgnoreCase(getString(R.string.question_one_answer));
         answerTwoOne = answer2_1.isChecked();
         answerTwoTwo = answer2_2.isChecked();
         answerTwoThree = answer2_3.isChecked();
@@ -115,6 +109,7 @@ public class QuizQuestionsActivity extends AppCompatActivity {
     public int scoreCounter() {
         score = 0;
         // Checks the first answer if entered correctly and adds points if true
+        answerOne = witchersName().equalsIgnoreCase(getString(R.string.question_one_answer));
         if (answerOne) {
             score = score + 1;
         }
